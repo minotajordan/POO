@@ -1,30 +1,50 @@
-// Clase abstracta que define una forma geométrica genérica
-abstract class FormaGeometrica {
-    // Método abstracto para calcular el área
-    public abstract double calcularArea();
-}
+public class Persona {
+    // Atributos privados
+    private String nombre;
+    private int edad;
 
-// Clase concreta que extiende la clase FormaGeometrica
-class Circulo extends FormaGeometrica {
-    private double radio;
-
-    public Circulo(double radio) {
-        this.radio = radio;
+    // Constructor
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
-    @Override
-    public double calcularArea() {
-        return Math.PI * radio * radio;
+    // Métodos públicos para acceder a los atributos
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        if (edad > 0) {
+            this.edad = edad;
+        } else {
+            System.out.println("La edad debe ser un número positivo.");
+        }
     }
 }
 
-public class EjemploAbstraccion {
+public class Main {
     public static void main(String[] args) {
-        // Crear un objeto Circulo
-        Circulo circulo = new Circulo(5.0);
+        // Crear un objeto de la clase Persona
+        Persona persona = new Persona("Juan", 30);
 
-        // Calcular y mostrar el área del círculo
-        double area = circulo.calcularArea();
-        System.out.println("Área del círculo: " + area);
+        // Acceder a los atributos a través de los métodos públicos
+        System.out.println("Nombre: " + persona.getNombre());
+        System.out.println("Edad: " + persona.getEdad());
+
+        // Modificar la edad
+        persona.setEdad(35);
+        System.out.println("Nueva Edad: " + persona.getEdad());
+
+        // Intentar establecer una edad negativa (no se permitirá)
+        persona.setEdad(-5); // Esto mostrará un mensaje de error en la consola
     }
 }

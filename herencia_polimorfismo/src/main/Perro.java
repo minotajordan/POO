@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package main;
+
+/**
+ *
+ * @author jordanminota
+ */
+public class Perro extends Animal {
+    
+    String raza;
+
+    public Perro(String raza, String nombre, String edad, String tipo_alimnetacion) {
+        super(nombre, edad, tipo_alimnetacion);
+        this.raza = raza;
+    }
+    
+    @Override
+    public void sonidoAnimal() {
+        System.out.println("Guauuu");
+    }
+    
+}

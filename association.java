@@ -1,3 +1,18 @@
+/*
+    La asociación en programación orientada a objetos se refiere a la relación entre dos clases.
+    Pueden haber diferentes tipos de asociaciones, como asociación simple, agregación o composición.
+    Aquí te daré un ejemplo simple de asociación en Java utilizando una asociación simple entre dos clases: Estudiante y Curso.
+    Supongamos que tienes una clase Estudiante y otra clase Curso.
+    Un estudiante puede estar asociado con varios cursos. Aquí está el código:
+*/
+
+/*
+    En este ejemplo, la clase Estudiante tiene una lista de cursos a los que está asociado.
+    La asociación se logra mediante el método agregarCurso que permite agregar un curso a la lista de cursos del estudiante.
+    Luego, en el método main, se crean instancias de estudiantes y cursos, y se establecen las asociaciones entre ellos.
+    Finalmente, se imprime la información para verificar las asociaciones.
+*/
+
 import java.util.ArrayList;
 import java.util.List;
 

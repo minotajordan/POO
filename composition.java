@@ -6,6 +6,18 @@
 /*  Aquí tienes un ejemplo simple de composición en Java con las clases Motor y Coche:
 */
 
+/*
+    En este ejemplo, la clase Coche contiene un objeto de la clase Motor.
+    La relación entre Coche y Motor es una relación de composición porque un coche está compuesto por un motor.
+    Cuando se crea un objeto de la clase Coche, también se crea automáticamente un objeto de la clase Motor.
+    La vida del motor está vinculada a la vida del coche.
+    En este caso, cuando el coche se apaga, el motor también se apaga.
+
+    Es importante destacar que la composición implica una relación más fuerte entre las clases en comparación con la agregación,
+    donde los componentes pueden existir de manera independiente. En la composición,
+    la existencia de los componentes está directamente ligada a la existencia del objeto contenedor.
+*/
+
 // Clase Motor (componente)
 class Motor {
     public void encender() {

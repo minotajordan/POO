@@ -1,3 +1,20 @@
+/*
+    La agregación es un tipo de relación entre clases en programación orientada a objetos donde una clase
+    (contenedor) tiene una relación con otra clase (contenido),
+    pero la segunda clase no es completamente dependiente de la primera.
+    En otras palabras, la segunda clase puede existir de manera independiente.
+    Aquí hay un ejemplo sencillo de agregación en Java con las clases Departamento y Empleado:
+*/
+
+/*
+    En este ejemplo, la clase Departamento tiene una lista de empleados como atributo
+    y puede agregar empleados mediante el método agregarEmpleado. Sin embargo,
+    los empleados pueden existir independientemente de un departamento.
+    Esto refleja una relación de agregación, donde un departamento "contiene" empleados,
+    pero los empleados pueden pertenecer a diferentes departamentos o ninguno.
+*/
+
+
 import java.util.ArrayList;
 import java.util.List;
 
